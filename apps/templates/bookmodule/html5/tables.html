@@ -1,11 +1,13 @@
-
-
+{% extends "layouts/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-{% block stylesheets %}<link rel="stylesheet" href="{% static 'main.css' %}">{% endblock stylesheets %}
 
+{% block title %} HTML5 Tables {% endblock title %}
 
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static 'main.css' %}">
+{% endblock stylesheets %}
 
+{% block content %}
 <div class="table1-title">Table 1: Table<br>of Fruits and<br>Their Prices</div>
 <table>
     <tr>
@@ -74,4 +76,4 @@
         <td>Yes</td>
     </tr>
 </table>
-
+{% endblock content %}
